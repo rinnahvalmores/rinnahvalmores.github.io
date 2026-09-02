@@ -1,22 +1,44 @@
-# Rinnah Lagroma Valmores — GitHub Pages Portfolio
+# Rinnah Lagroma Valmores — Portfolio
 
-A responsive, modern portfolio built with plain HTML, CSS and JavaScript. No build step is required.
+Responsive single-page portfolio based on the supplied portfolio document and the requested dark blue/purple visual mockup.
 
-## Publish on GitHub Pages
+## Files
 
-1. Create a **public** GitHub repository named `YOUR-USERNAME.github.io`.
-2. Upload all files in this folder to the repository.
-3. Commit to the `main` branch.
-4. Go to **Settings → Pages**.
-5. Under Build and deployment, choose **GitHub Actions**.
-6. The included workflow will deploy the site automatically.
-7. Open `https://YOUR-USERNAME.github.io/`.
+- `index.html` — page structure/content
+- `style.css` — responsive styling and layout
+- `script.js` — project cards, mobile navigation, sticky-header state, scroll reveal, dynamic year
+- `assets/rinnah-portrait.png` — transparent hero portrait
 
-## Customize
+## Run locally
 
-- Edit text in `index.html`.
-- Edit colors/layout in `style.css`.
-- Edit projects and experience in `script.js`.
-- Replace the SVG preview files in `images/` with your actual website screenshots, keeping the filenames or updating the paths in `script.js`.
+Open `index.html` in a browser.
 
-The included project preview images are generic editable-style mockups, not claims about the exact appearance of the live websites. Replace them with your real screenshots for the strongest recruiter presentation.
+For best results with local development, run a simple server from this folder, for example:
+
+    python3 -m http.server 8000
+
+Then visit `http://localhost:8000`.
+
+## Deploy to GitHub Pages
+
+Upload all files while preserving the folder structure. Make sure `index.html` is in the repository root (or configure Pages for the folder containing it).
+
+## Notes
+
+The project list, skills, experience, education, and contact information are based on the supplied portfolio document. The project logo circles are text-based placeholders so the site does not depend on downloading third-party brand assets.
+
+## Recent updates
+
+- Added a downloadable CV button in the sticky header using `assets/Rinnah-L-Valmores-CV.pdf`.
+- Added Facebook, Instagram, LinkedIn, and GitHub icons to the hero section.
+- Increased small text throughout the site so the minimum font size is 16px.
+- The Facebook, Instagram, and LinkedIn buttons currently point to the platform homepages; replace their `href` values in `index.html` with your personal profile URLs. GitHub is linked to `https://github.com/rinnahvalmores`.
+
+
+## Projects section update
+
+- Added a **Selected Work / Featured Projects** section featuring the first 6 projects from the supplied portfolio document.
+- Each featured project includes a large thumbnail, description, technology stack, and **View Website** button.
+- Added a separate **More Projects** section containing the remaining 8 projects with compact thumbnails.
+- Added local project thumbnails under `assets/project-thumbnails/` so the portfolio does not depend on external screenshot or image services.
+- Project names, URLs, roles, stacks, and descriptions are based on the supplied portfolio document.

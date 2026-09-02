@@ -1,188 +1,351 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="theme-color" content="#071126" />
-        <meta name="author" content="Rinnah Lagroma Valmores">
-        <meta name="description" content="Rinnah Lagroma Valmores — Frontend Web Developer portfolio" />
-        <title>Rinnah Lagroma Valmores | Frontend Web Developer</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="nav wrap">
-                <a class="logo" href="#home"
-                    ><b>RL</b><span>Rinnah Lagroma<small>Frontend Web Developer</small></span></a
-                ><button id="menu" aria-label="Open menu">☰</button>
-                <nav id="nav">
-                    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a
-                    ><a href="#experience">Experience</a><a href="#contact">Contact</a
-                    ><a class="navbtn" href="#contact">Let's Talk</a>
-                </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rinnah Lagroma Valmores — Frontend Web Developer portfolio.">
+  <title>Rinnah Lagroma Valmores | Frontend Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-glow glow-1"></div>
+  <div class="site-glow glow-2"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Rinnah Lagroma Valmores home">
+        <span class="brand-mark">RV</span>
+        <span class="brand-name">Rinnah Lagroma Valmores</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/Rinnah-L-Valmores-CV.pdf" download="Rinnah-L-Valmores-CV.pdf" target="_blank" aria-label="Download Rinnah L. Valmores CV">
+          <span>Download CV</span>
+          <svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 3v11m0 0 4-4m-4 4-4-4M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Rinnah Lagroma <span>Valmores</span></h1>
+          <h2>Frontend Web Developer</h2>
+          <p class="hero-text">
+            Frontend Engineer and Web Developer with experience building responsive and modern
+            websites for international brands, corporate businesses, and startups. Skilled in
+            ReactJS, WordPress, Salesforce Marketing Cloud, Shopify, HTML, CSS, JavaScript,
+            and responsive UI development.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work</a>
+            <a class="btn btn-outline" href="#contact">Get In Touch</a>
+          </div>
+
+          <div class="socials" aria-label="Social links">
+            <!-- Replace the placeholder profile URLs below with your personal social-media URLs. -->
+            <a href="https://www.facebook.com/rinnah.lagroma/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.6.4-1 1-1Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/yna_lagroma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill-dot"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/rinnah-valmores-998701194/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5A2.25 2.25 0 1 0 6.5 4a2.25 2.25 0 0 0 0 4.5ZM4.5 10h4v10h-4V10Zm6 0h3.8v1.36h.06c.53-.97 1.83-1.99 3.77-1.99 4.03 0 4.87 2.65 4.87 6.1V20h-4v-4.02c0-.96-.02-2.2-1.34-2.2-1.34 0-1.55 1.05-1.55 2.13V20h-4V10Z"/></svg>
+            </a>
+            <a href="https://github.com/rinnahvalmores" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8a9.2 9.2 0 0 0-2.91 17.93c.46.08.63-.2.63-.44v-1.55c-2.57.56-3.11-1.09-3.11-1.09-.42-1.06-1.03-1.34-1.03-1.34-.84-.57.06-.56.06-.56.93.07 1.42.96 1.42.96.83 1.42 2.18 1.01 2.71.77.08-.6.33-1.01.59-1.24-2.05-.23-4.2-1.03-4.2-4.58 0-1.01.36-1.84.96-2.49-.1-.24-.42-1.18.09-2.45 0 0 .78-.25 2.54.95A8.8 8.8 0 0 1 12 7.4c.79 0 1.58.11 2.32.32 1.76-1.2 2.54-.95 2.54-.95.51 1.27.19 2.21.09 2.45.6.65.96 1.48.96 2.49 0 3.56-2.16 4.35-4.21 4.58.33.28.62.82.62 1.65v2.41c0 .24.17.52.64.43A9.2 9.2 0 0 0 12 2.8Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-orb"></div>
+          <div class="dot-grid"></div>
+          <img src="assets/rinnah-portrait.png" alt="Rinnah Lagroma Valmores" class="hero-photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container two">
+          <div class="code">
+              <div class="codetop">● ● ● <span>developer.js</span></div>
+              <pre>
+const developer = {\n  name: "Rinnah Lagroma Valmores",\n  role: "Frontend Developer",\n  stack: ["React", "WordPress", "Salesforce Marketing Cloud", "Shopify", "HTML", "CSS", "JavaScript"],\n  focus: "Responsive UI",\n  mindset: "Pixel perfect"\n}</pre
+              >
+          </div>
+          <div class="about-description">
+              <label>ABOUT ME</label>
+              <h2>Turning Designs into <br><em>Beautiful, Functional Websites</em></h2>
+              <p class="muted">
+                  I'm a Frontend Engineer and Web Developer experienced in translating complex problems into
+                  simple, beautiful and responsive interfaces. I care about clean code, performance,
+                  accessibility and delivering pixel-perfect user interfaces.
+              </p>
+              <div class="stats">
+                  <div><b>14+</b><small>Websites</small></div>
+                  <div><b>React</b><small>Modern workflow</small></div>
+                  <div><b>UI</b><small>Pixel focused</small></div>
+                  <div><b>QA</b><small>Cross-browser</small></div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Featured Projects</h2>
+          <p class="section-intro">A selection of websites and digital experiences I've helped build and maintain.</p>
+          <span></span>
+        </div>
+        <div class="featured-projects-grid" id="featuredProjectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section more-projects-section" id="more-projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">More Projects</p>
+          <h2>Other Work</h2>
+          <p class="section-intro">More frontend projects, responsive builds, and website updates from my portfolio.</p>
+          <span></span>
+        </div>
+        <div class="more-projects-grid" id="moreProjectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What I Work With</p>
+          <h2>Skills</h2>
+          <span></span>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon purple">&lt;/&gt;</div>
+            <h3>Frontend</h3>
+            <ul>
+              <li>ReactJS</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>SASS</li>
+              <li>Bootstrap</li><li>jQuery</li><li>Responsive Web Design</li>
+              <li>PSD to HTML Conversion</li><li>Pixel Perfect UI Development</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon blue">▱</div>
+            <h3>CMS &amp; Platforms</h3>
+            <ul><li>WordPress</li><li>Shopify</li><li>Salesforce Marketing Cloud</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon cyan">⚙</div>
+            <h3>Tools &amp; Technologies</h3>
+            <ul>
+              <li>Git</li><li>MySQL</li><li>Adobe Photoshop</li><li>Adobe Illustrator</li>
+              <li>Adobe After Effects</li><li>Mailchimp</li><li>Benchmark</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon gold">☆</div>
+            <h3>Other Skills</h3>
+            <ul>
+              <li>API Integration</li><li>Cross-Browser Compatibility</li><li>Mobile Optimization</li>
+              <li>QA Testing</li><li>Team Collaboration</li><li>Training and Coaching</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">My Career</p>
+          <h2>Work Experience</h2>
+          <span></span>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">May 2020 –<br>Aug 2026</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="company-logo-wrap">
+                <img class="company-logo company-logo-cody" src="assets/company-logos/cody.jpg" alt="CODY Web Development Inc. logo">
+              </div>
+              <div class="timeline-content">
+                <h3>CODY Web Development, Inc.</h3>
+                <p class="role">Frontend Engineer</p>
+                <ul>
+                  <li>Converted websites for Yves Saint Laurent (YSL) and Shu Uemura using Salesforce Marketing Cloud.</li>
+                  <li>Developed, updated, and maintained customized Japanese WordPress websites.</li>
+                  <li>Implemented UI components and API integrations using ReactJS.</li>
+                  <li>Created custom HTML emails for newsletters and invitations using Benchmark.</li>
+                  <li>Designed and tested responsive websites across multiple browsers and devices.</li>
+                  <li>Developed responsive user interfaces using HTML, CSS, jQuery, and JavaScript.</li>
+                  <li>Consistently delivered projects under pressure and within deadlines.</li>
+                </ul>
+              </div>
             </div>
-        </header>
-        <main>
-            <section class="hero" id="home">
-                <div class="wrap heroGrid">
-                    <div>
-                        <div class="available">● Open to new opportunities</div>
-                        <label>FRONTEND WEB DEVELOPER</label>
-                        <h1>Hi, I'm Rinnah.<br /><em>Frontend Web Developer</em></h1>
-                        <p>
-                            Frontend Engineer and Web Developer with experience building responsive and modern websites
-                            for international brands, corporate businesses, and startups.
-                        </p>
-                        <div class="chips">
-                            <span>ReactJS</span><span>TypeScript</span><span>WordPress</span><span>Shopify</span
-                            ><span>Salesforce Marketing Cloud</span>
-                        </div>
-                        <div class="actions">
-                            <a class="btn primary" href="#projects">View My Work ↗</a
-                            ><a class="btn ghost" href="#contact">Get In Touch</a>
-                        </div>
-                    </div>
-                    <div class="devices">
-                        <div class="laptop">
-                            <div class="bar">● ● ● <i>rinnahlagroma.dev</i></div>
-                            <div class="mock">
-                                <small>RESPONSIVE UI</small><strong>Beautiful<br />digital experiences.</strong
-                                ><span>React • TypeScript • UI</span><b>EXPLORE WORK</b>
-                                <div class="shape"></div>
-                            </div>
-                        </div>
-                        <div class="phone">
-                            <div class="phonescreen">
-                                <small>SHU UEMURA</small><strong>UNLIMITED<br />CARE.</strong>
-                                <div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="about">
-                <div class="wrap two">
-                    <div class="code">
-                        <div class="codetop">● ● ● <span>developer.js</span></div>
-                        <pre>
-const developer = {\n  name: "Rinnah Lagroma",\n  role: "Frontend Developer",\n  stack: ["React", "WordPress"],\n  focus: "Responsive UI",\n  mindset: "Pixel perfect"\n}</pre
-                        >
-                    </div>
-                    <div>
-                        <label>ABOUT ME</label>
-                        <h2>Turning Designs into <em>Beautiful, Functional Websites</em></h2>
-                        <p class="muted">
-                            I'm a Frontend Engineer and Web Developer experienced in translating complex problems into
-                            simple, beautiful and responsive interfaces. I care about clean code, performance,
-                            accessibility and delivering pixel-perfect user interfaces.
-                        </p>
-                        <div class="stats">
-                            <div><b>14+</b><small>Websites</small></div>
-                            <div><b>React</b><small>Modern workflow</small></div>
-                            <div><b>UI</b><small>Pixel focused</small></div>
-                            <div><b>QA</b><small>Cross-browser</small></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="soft" id="skills">
-                <div class="wrap">
-                    <div class="heading">
-                        <div>
-                            <label>SKILLS & TECHNOLOGIES</label>
-                            <h2>Tools I Use</h2>
-                        </div>
-                        <p>Technologies and tools I work with to build responsive digital experiences.</p>
-                    </div>
-                    <div class="skillgrid">
-                        <article>
-                            <b>Frontend</b>
-                            <div class="tags">
-                                ReactJS, JavaScript, HTML5, CSS3, SASS, Bootstrap, jQuery, Responsive Web Design, PSD to
-                                HTML, Pixel Perfect UI
-                            </div>
-                        </article>
-                        <article>
-                            <b>CMS & Platforms</b>
-                            <div class="tags">WordPress, Shopify, Salesforce Marketing Cloud</div>
-                        </article>
-                        <article>
-                            <b>Tools & Technologies</b>
-                            <div class="tags">
-                                Git, MySQL, Adobe Photoshop, Adobe Illustrator, Adobe After Effects, Mailchimp,
-                                Benchmark
-                            </div>
-                        </article>
-                        <article>
-                            <b>Other Skills</b>
-                            <div class="tags">
-                                API Integration, Cross-Browser Compatibility, Mobile Optimization, QA Testing, Team
-                                Collaboration, Training and Coaching
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section id="projects">
-                <div class="wrap">
-                    <div class="heading">
-                        <div>
-                            <label>FEATURED PROJECTS</label>
-                            <h2>Selected Work</h2>
-                        </div>
-                        <p>
-                            A selection of websites I've worked on for international brands, businesses, and
-                            organizations.
-                        </p>
-                    </div>
-                    <div id="featured" class="projectgrid"></div>
-                    <div class="more">
-                        <label>ALL PROJECTS</label>
-                        <h2>More Projects</h2>
-                        <p>Additional websites I've worked on throughout my career.</p>
-                        <div id="more" class="moregrid"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="soft" id="experience">
-                <div class="wrap">
-                    <div class="heading">
-                        <div>
-                            <label>WORK EXPERIENCE</label>
-                            <h2>My Professional Journey</h2>
-                        </div>
-                        <p>Frontend development, WordPress, responsive UI, email development, QA, and delivery.</p>
-                    </div>
-                    <div id="jobs" class="timeline"></div>
-                </div>
-            </section>
-            <section class="contact" id="contact">
-                <div class="wrap contactgrid">
-                    <div>
-                        <label>LET'S WORK TOGETHER</label>
-                        <h2>Have a project or opportunity in mind?</h2>
-                        <p>
-                            Feel free to reach out for freelance work, collaborations, or frontend development
-                            opportunities.
-                        </p>
-                        <a class="btn primary" href="mailto:rinnahlagroma.18@gmail.com">Email Me ↗</a>
-                    </div>
-                    <div class="contactcard">
-                        <small>Email</small><a href="mailto:rinnahlagroma.18@gmail.com">rinnahlagroma.18@gmail.com</a
-                        ><small>Phone</small><span>09555067760 / 09850209405</span><small>Skype</small
-                        ><span>live:rinnahlagroma.18</span><small>Education</small
-                        ><span>B.S. Computer Science • 2013–2017</span>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="wrap foot">
-                <a class="logo" href="#home"
-                    ><b>RL</b><span>Rinnah Lagroma<small>Frontend Web Developer</small></span></a
-                ><span>© 2026 Rinnah Lagroma Valmores. All rights reserved.</span><a href="#home">Back to top ↑</a>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Dec 2021 –<br>Jun 2022</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="company-logo-wrap company-logo-text" aria-label="IgniteWebs">
+                <span>ignite</span><strong>webs</strong>
+              </div>
+              <div class="timeline-content">
+                <h3>IgniteWebs</h3>
+                <p class="role">Freelance WordPress Developer</p>
+                <ul>
+                  <li>Developed and maintained customized Japanese WordPress websites.</li>
+                  <li>Improved CSS and JavaScript implementation to enhance website functionality and user experience.</li>
+                </ul>
+              </div>
             </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jul 2019 –<br>Mar 2020</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="company-logo-wrap">
+                <img class="company-logo company-logo-zeroten" src="assets/company-logos/zeroten.png" alt="ZERO-TEN logo">
+              </div>
+              <div class="timeline-content">
+                <h3>Zeroten Philippines, Inc.</h3>
+                <p class="role">Web Developer</p>
+                <ul>
+                  <li>Converted multiple website designs into functional WordPress websites.</li>
+                  <li>Maintained and updated customized WordPress websites.</li>
+                  <li>Tested websites across desktop and mobile devices and conducted QA testing.</li>
+                  <li>Created email templates and campaigns using Mailchimp.</li>
+                  <li>Trained and coached new team members.</li>
+                  <li>Ranked No.1 for Conversion Speed Rating and recognized as a top performer.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Sep 2017 –<br>Jun 2019</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="company-logo-wrap">
+                <img class="company-logo company-logo-proweaver" src="assets/company-logos/proweaver.png" alt="Proweaver logo">
+              </div>
+              <div class="timeline-content">
+                <h3>Proweaver Inc.</h3>
+                <p class="role">WordPress Developer</p>
+                <ul>
+                  <li>Developed websites using WordPress Elementor.</li>
+                  <li>Maintained and enhanced existing websites.</li>
+                  <li>Redesigned websites to improve user experience and functionality.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section">
+      <div class="container narrow">
+        <div class="education-card reveal">
+          <div class="education-icon">🎓</div>
+          <div>
+            <p class="eyebrow">Education</p>
+            <h2>Bachelor of Science in Computer Science</h2>
+            <p>Bohol Island State University – Calape Campus</p>
+            <span>2013 – 2017</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-heading">
+            <p class="eyebrow">Have a project?</p>
+            <h2>Let's Work Together</h2>
+            <span></span>
+            <p class="contact-lead">I'm available for freelance projects, collaborations, and frontend development opportunities.</p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:rinnahlagroma.18@gmail.com">
+              <span class="contact-icon">✉</span>
+              <div><small>Email</small><b>rinnahlagroma.18@gmail.com</b></div>
+              <span class="contact-arrow">↗</span>
+            </a>
+            <a class="contact-card" href="tel:+639555067760">
+              <span class="contact-icon">☎</span>
+              <div><small>Phone</small><b>09555067760 / 09850209405</b></div>
+              <span class="contact-arrow">↗</span>
+            </a>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:rinnahlagroma.18@gmail.com">Start a Conversation <span>→</span></a>
+            <a class="btn btn-outline" href="#home">Back to Top <span>↑</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <a href="#home" class="footer-name">Rinnah L. Valmores</a>
+        <p>Frontend Engineer &amp; Web Developer</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-right">
+        <div class="footer-socials" aria-label="Social links">
+          <a href="https://github.com/rinnahvalmores" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.82c.56.1.77-.24.77-.54v-2.1c-3.14.68-3.8-1.33-3.8-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.17 1.72 1.17 1 .1.1.8.1.8 1.42 2.42 3.72 1.72 4.63 1.31.1-.81.4-1.37.72-1.69-2.51-.29-5.15-1.26-5.15-5.58 0-1.23.44-2.24 1.17-3.03-.12-.29-.51-1.43.11-2.98 0 0 .95-.3 3.1 1.16a10.7 10.7 0 0 1 5.64 0c2.15-1.46 3.1-1.16 3.1-1.16.62 1.55.23 2.69.11 2.98.73.79 1.17 1.8 1.17 3.03 0 4.33-2.65 5.28-5.17 5.56.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          </a>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Rinnah L. Valmores</p>
+      </div>
+
+      <a href="#home" class="back-top" aria-label="Back to top">
+        <span>↑</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
